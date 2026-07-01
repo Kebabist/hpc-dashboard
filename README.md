@@ -9,6 +9,8 @@ requests against a fixed pool of nodes across partitions (`compute`, `gpu`,
 `highmem`) — as a small, fully working full-stack app.
 
 ![status](https://img.shields.io/badge/status-active-45D6C4)
+<img width="1891" height="900" alt="image" src="https://github.com/user-attachments/assets/af53f9ca-7355-448e-88b1-2b950527d96c" />
+
 
 ## Stack
 
