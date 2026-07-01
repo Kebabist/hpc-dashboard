@@ -1,0 +1,12 @@
+{
+  "plugins": [],
+  "services": [
+    {
+      "name": "backend",
+      "path": "backend",
+      "env": {
+        "PORT": "3001"
+      }
+    }
+  ]
+}
