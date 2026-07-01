@@ -1,0 +1,23 @@
+services:
+  server:
+    build: ./server
+    ports:
+      - "4000:4000"
+    environment:
+      - PORT=4000
+      - DB_PATH=/app/data/cluster.db
+      - CORS_ORIGIN=*
+    volumes:
+      - cluster-data:/app/data
+    restart: unless-stopped
+
+  client:
+    build: ./client
+    ports:
+      - "8080:80"
+    depends_on:
+      - server
+    restart: unless-stopped
+
+volumes:
+  cluster-data:
